@@ -261,9 +261,11 @@ word-wrap: break-word;
 .social-menu-wrapper {
     position: relative;
     grid-area: sidebar;
+    
 }
 
 .positioning-social {
+    opacity: 0;
 
     bottom: 10px;
 }
@@ -348,13 +350,26 @@ word-wrap: break-word;
 }
 .animme {
     animation: pop 1s forwards;
+}
+.noanim {
     
-
-
+   animation: unpop 1s forwards;
+    
 }
 
+@keyframes unpop {
+    0% {
+        transform: translateX(20px) translateY(-20px);
+    }
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
+}
+
+
+
 @keyframes pop {
-    0%{
+    0%{ transform: translateX(0px) translateY(0px);
 
     }
     100%{
@@ -396,6 +411,6 @@ word-wrap: break-word;
 }
 
 .work {
-    
+    margin-bottom: 700px;
     grid-area: work;
 }
