@@ -1,0 +1,293 @@
+:root {
+    overflow-x: hidden;
+    width:100%;
+}
+* {
+    font-family: 'Poppins';
+font-style: normal;
+margin:0;
+}
+h2 {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 110px;
+color: #454647;
+}
+p {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+}
+h3 {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 64px;
+padding-top: 2rem;
+color: #454647;
+
+}
+h4 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #454647;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F6F6F6;
+    z-index: -2;
+    
+    
+}
+.title {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.title-wrapper {
+    width: 100vw;
+    margin-left: 200px;
+    
+    
+
+
+}
+.hi-im {
+
+padding: 0;
+margin: 0;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+animation: side-load 0.5s;
+}
+.title-name {
+
+padding: 0;
+margin: 0;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+background: linear-gradient(86.7deg, #618FD2 -11.36%, #A6C0F0 40.16%, #C0D3FB 88.51%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+font-size: 128px;
+min-width: 900px;
+
+animation: side-load 1s;
+
+
+}
+.desc {
+position: relative;
+left:20%;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+animation: side-load 1.5s;
+margin: 0;
+word-wrap: break-word;
+}
+@keyframes side-load {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    
+
+    100% {
+        opacity: 100;
+    }
+}
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 2000px;
+}
+
+.circles div:nth-child(1) {
+    background-color: #0C3BAA;
+    left: -3%;
+    position: absolute;
+    top:-80px;
+    animation: circle-bg 30s infinite;
+    animation-delay: 20s;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    z-index:-1;
+    
+}
+.circles div:nth-child(2) {
+    left: 10%;
+    background-color: #2274A5;
+    position: absolute;
+    top:-50px;
+    animation: circle-bg 30s infinite;
+    animation-delay: 15s;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    z-index:-1;
+}
+.circles div:nth-child(3) {
+    left: 30%;
+    background-color: #2274A5;
+    position: absolute;
+    top:-150px;
+    animation: circle-bg 30s infinite;
+    animation-delay: 8s;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    z-index:-1;
+}
+.circles div:nth-child(4) {
+    left: 50%;
+    background-color: #2274A5;
+    position: absolute;
+    top:-60px;
+    animation: circle-bg 30s infinite;
+    animation-delay: 3s;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    z-index:-1;
+}
+.circles div:nth-child(5) {
+    position: absolute;
+    top:-120px;
+    left: 70%;
+    background-color: #0C3BAA;
+    animation: circle-bg 30s infinite;
+    animation-delay: 24s;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    z-index:-1;
+}
+.circles div:nth-child(6) {
+    position: absolute;
+    top:-100px;
+    left: 95%;
+    background-color: #0C3BAA;
+    animation: circle-bg 30s infinite;
+    animation-delay: 28s;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    z-index:-1;
+}
+
+@keyframes circle-bg {
+    0% { 
+        
+        transform: translateY(-100px);
+        opacity: 0.6;
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+
+    }
+    100% {
+
+        transform: translateY(2100px);
+        opacity: 0;
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+
+    }
+}
+
+#page-layout {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-areas: 
+    "sidebar about"
+    "sidebar experience"
+    "sidebar work"
+    ;
+}
+.social-menu-wrapper {
+    position: relative;
+    grid-area: sidebar;
+}
+
+#social-menu {
+
+    position: sticky;
+    margin-left:30px;
+    top: 0px;
+    
+}
+
+#linkedin {
+    width: 50px;
+    position: absolute;
+    top: 138px;
+    left: 0px;
+}
+
+#github {
+    width: 50px;
+    position: absolute;
+    top: 233px;
+    left: 0px;
+}
+
+.about-me {
+    flex-grow: 10;
+    display: flex;
+    grid-area: about;
+    gap: 3rem;
+}
+
+.left-about-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    margin-left: 100px;
+    gap: 2rem;
+    
+
+    
+
+}
+
+.right-about-content {
+    flex-grow: 1;
+    margin-right: 8rem;
+    
+    
+    justify-content: center;
+}
+
+.skills {
+    
+    display: flex;
+    gap: 5rem;
+
+}
+
+.experience {
+    margin-top: 200px;
+    grid-area: experience;
+
+}
+
+.work {
+    
+    grid-area: work;
+}
