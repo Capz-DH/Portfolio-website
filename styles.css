@@ -1,5 +1,6 @@
 :root {
     overflow-x: hidden;
+    -webkit-overflow-x:hidden;
     width:100%;
 }
 * {
@@ -337,8 +338,8 @@ word-wrap: break-word;
 .about-me {
     
     padding-right: 2rem;
-    padding-bottom: 75px;
-    padding-top: 50px;
+    padding-bottom: 55px;
+    padding-top: 30px;
     flex-grow: 10;
     display: flex;
     grid-area: about;
