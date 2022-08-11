@@ -1,3 +1,5 @@
+
+
 function init() {
   element = document.querySelector('.about-me');
   
@@ -62,3 +64,5 @@ window.addEventListener('resize', init);
 init();
 
 socialInit();
+
+scrollSnapPolyfill()
