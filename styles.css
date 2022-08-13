@@ -2,6 +2,8 @@
     overflow-x: hidden;
     -webkit-overflow-x:hidden;
     width:100%;
+    --frontColour: #618FD2;
+    --backColour: #4C6FA4;
 }
 * {
     font-family: 'Poppins';
@@ -123,12 +125,12 @@ word-wrap: break-word;
 }
 
 .circles div:nth-child(1) {
-    background-color: #0C3BAA;
-    left: -3%;
+    background-color: var(--frontColour);
+    left: 40%;
     position: absolute;
     top:-80px;
     animation: circle-bg 30s infinite;
-    animation-delay: 20s;
+    animation-delay: 5s;
     height: 80px;
     width: 80px;
     border-radius: 50%;
@@ -136,36 +138,36 @@ word-wrap: break-word;
     
 }
 .circles div:nth-child(2) {
-    left: 10%;
-    background-color: #2274A5;
+    left: 5%;
+    background-color: var(--backColour);
     position: absolute;
-    top:-50px;
+    top:-100px;
     animation: circle-bg 30s infinite;
-    animation-delay: 15s;
-    height: 50px;
-    width: 50px;
+    animation-delay: 2.5s;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     z-index:-1;
 }
 .circles div:nth-child(3) {
-    left: 30%;
-    background-color: #2274A5;
+    left: 72%;
+    background-color: var(--frontColour);
     position: absolute;
     top:-150px;
     animation: circle-bg 30s infinite;
-    animation-delay: 8s;
+    animation-delay: 7.5s;
     height: 150px;
     width: 150px;
     border-radius: 50%;
     z-index:-1;
 }
 .circles div:nth-child(4) {
-    left: 50%;
-    background-color: #2274A5;
+    left: 16%;
+    background-color: var(--backColour);
     position: absolute;
     top:-60px;
     animation: circle-bg 30s infinite;
-    animation-delay: 3s;
+    animation-delay: 10s;
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -174,10 +176,10 @@ word-wrap: break-word;
 .circles div:nth-child(5) {
     position: absolute;
     top:-120px;
-    left: 70%;
-    background-color: #0C3BAA;
+    left: 48%;
+    background-color: var(--frontColour);
     animation: circle-bg 30s infinite;
-    animation-delay: 24s;
+    animation-delay: 12.5s;
     height: 120px;
     width: 120px;
     border-radius: 50%;
@@ -186,46 +188,82 @@ word-wrap: break-word;
 .circles div:nth-child(6) {
     position: absolute;
     top:-100px;
-    left: 25%;
-    background-color: #0C3BAA;
+    left: 80%;
+    background-color: var(--backColour);
     animation: circle-bg 30s infinite;
-    animation-delay: 12s;
+    animation-delay: 15s;
     height: 100px;
     width: 100px;
     border-radius: 50%;
     z-index:-1;
 }
-.circles div:nth-child(6) {
+.circles div:nth-child(7) {
     position: absolute;
     top:-100px;
-    left: 95%;
-    background-color: #0C3BAA;
+    left: 24%;
+    background-color: var(--frontColour);
     animation: circle-bg 30s infinite;
-    animation-delay: 28s;
+    animation-delay: 17.5s;
     height: 100px;
     width: 100px;
     border-radius: 50%;
     z-index:-1;
 }
-.circles div:nth-child(4) {
-    left: 35%;
-    background-color: #2274A5;
+.circles div:nth-child(8) {
+    left: 56%;
+    background-color: var(--backColour);
     position: absolute;
     top:-60px;
     animation: circle-bg 30s infinite;
-    animation-delay: 5s;
+    animation-delay: 20s;
     height: 60px;
     width: 60px;
     border-radius: 50%;
     z-index:-1;
 }
-.circles div:nth-child(5) {
+.circles div:nth-child(9) {
     position: absolute;
     top:-120px;
-    left: 80%;
-    background-color: #0C3BAA;
+    left: 88%;
+    background-color: var(--frontColour);
     animation: circle-bg 30s infinite;
-    animation-delay: 17s;
+    animation-delay: 22.5s;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    z-index:-1;
+}
+.circles div:nth-child(10) {
+    position: absolute;
+    top:-100px;
+    left: 32%;
+    background-color: var(--backColour);
+    animation: circle-bg 30s infinite;
+    animation-delay: 25s;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    z-index:-1;
+}
+.circles div:nth-child(11) {
+    left: 64%;
+    background-color: var(--frontColour);
+    position: absolute;
+    top:-60px;
+    animation: circle-bg 30s infinite;
+    animation-delay: 27.5s;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    z-index:-1;
+}
+.circles div:nth-child(12) {
+    position: absolute;
+    top:-120px;
+    left: 96%;
+    background-color: var(--backColour);
+    animation: circle-bg 30s infinite;
+    animation-delay: 30s;
     height: 120px;
     width: 120px;
     border-radius: 50%;
@@ -240,6 +278,9 @@ word-wrap: break-word;
         filter: blur(8px);
         -webkit-filter: blur(8px);
 
+    }
+    65% {
+        opacity: 0.3;
     }
     100% {
 
@@ -477,6 +518,7 @@ word-wrap: break-word;
 
 .animate-skills{
     animation: skillsanim 1s forwards;
+    animation-delay: 0.5s;
 }
 
 @keyframes skillsanim {
@@ -491,9 +533,71 @@ word-wrap: break-word;
 }
 .unanimate-skills{
     animation: unskillsanim 1s forwards;
+    animation-delay: 0s;
 }
 
 @keyframes unskillsanim {
+    0% {
+        transform: translateY(-10px) translateX(10px);
+
+    }
+    100% {
+        transform: translateY(0px) translateX(0px);
+        
+    }
+}
+
+.animate-tech{
+    animation: techanim 1s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes techanim {
+    0% {
+        transform: translateY(0px) translateX(0px);
+
+    }
+    100% {
+        transform: translateY(-10px) translateX(10px);
+        
+    }
+}
+.unanimate-tech{
+    animation: untechanim 1s forwards;
+    animation-delay: 0s;
+}
+
+@keyframes untechanim {
+    0% {
+        transform: translateY(-10px) translateX(10px);
+
+    }
+    100% {
+        transform: translateY(0px) translateX(0px);
+        
+    }
+}
+.animate-nontech{
+    animation: nontechanim 1s forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes nontechanim {
+    0% {
+        transform: translateY(0px) translateX(0px);
+
+    }
+    100% {
+        transform: translateY(-10px) translateX(10px);
+        
+    }
+}
+.unanimate-nontech{
+    animation: unnontechanim 1s forwards;
+    animation-delay: 0s;
+}
+
+@keyframes unnontechanim {
     0% {
         transform: translateY(-10px) translateX(10px);
 
