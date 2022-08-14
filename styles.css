@@ -614,60 +614,94 @@ word-wrap: break-word;
     height: 100vh;
     grid-area: experience;
 }
-
-.work {
-    height: 100vh;
-    grid-area: work;
-    display: flex;
-    flex-direction: column;
-    
-    
+.experience h2 {
+    font-size: 80px;
 }
-.work-content {
+.rebirth-digital {
     display: flex;
     flex-direction: column;
-    justify-items: center;
-    align-content: space-between;
     gap: 3rem;
+    margin-top: 100px;
     
 }
-.upper-content {
+
+.background-light{
+    position: relative;
+    background-color: var(--frontColour);
+    height: 700px;
+    width: 700px;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    top: -1250px;
+    z-index: -2;
+    border-radius: 50%;
+}
+.background-dark{
+    position: relative;
+    background-color: var(--backColour);
+    height: 700px;
+    width: 700px;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    top: -550px;
+    z-index: -3;
+    border-radius: 50%;
+}
+.rebirth-title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.rebirth-title h3 {
+    padding-top: 1rem;
+    font-weight: 500;
+}
+
+.rebirth-title h4 {
+    padding-top: 1rem;
+    font-weight: 400;
+}
+
+
+
+.rebirth-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    gap: 5rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
 }
-.lower-content {
+.rebirth-content img {
+    width: 450px;
+}
+.rebirth-right-content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    height: 45vh;
-    perspective: 100px;
+    align-items: flex-start;
+    gap: 4rem;
+}
+.rebirth-right-content button {
+    height: 70px;
+    width: 150px;
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--frontColour);
+
+    
+    box-shadow: -5px 5px 0px var(--backColour);
+    cursor: pointer;
+    font-size: 24px;
+    
     
 }
 
-
-.middle-upper {
-    background-color: #618FD2;
-    width: 450px;
-    height: 340px;
-    border-radius: 15px ;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.4), 0 0 5px rgba(0, 0, 0, 0.4);
-}
-
-.left-lower {
-    background-color: #618FD2;
-    width: 450px;
-    height: 340px;
-    border-radius: 15px ;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.4), 0 0 5px rgba(0, 0, 0, 0.4);
-
-}
-.right-lower {
-    background-color: #618FD2;
-    width: 450px;
-    height: 340px;
-    border-radius: 15px ;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.4), 0 0 5px rgba(0, 0, 0, 0.4);
+.rebirth-right-content button:active {
+    transform: translateX(-5px) translateY(5px);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: all 0.1s ease-in-out;
 }
