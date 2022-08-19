@@ -60,6 +60,7 @@ body {
     margin-left: 200px;
     
     
+    
 
 
 }
@@ -293,6 +294,8 @@ word-wrap: break-word;
 #page-layout {
     display: grid;
     width:100vw;
+    height: 2500px;
+    
     margin-top: 100px;
     grid-template-columns: 1fr 10fr;
     grid-template-areas: 
@@ -373,25 +376,25 @@ word-wrap: break-word;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 7rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
-.darker-wrapper {
-    background: linear-gradient(145deg, #ffffff33, #dedede33);
-        backdrop-filter: blur(6.3px);
-        -webkit-backdrop-filter: blur(6.3px);
-}
+
 
 .about-me {
-    
-    padding-right: 2rem;
-    padding-bottom: 55px;
-    padding-top: 30px;
-    flex-grow: 10;
+    background: linear-gradient(145deg, #ffffff33, #dedede33);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+    width: 80vw;
     display: flex;
     gap: 3rem;
-    border-top-left-radius: 125px;
-    border-bottom-left-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
     
 }
 .animme {
@@ -422,21 +425,18 @@ word-wrap: break-word;
 }
 .left-about-content {
     display: flex;
-    flex-direction: column;
-    flex-grow: 3;
+    
     margin-left: 100px;
     gap: 2rem;
 }
-.left-about-content h2{
-    font-size: 6rem;
-}
+
 
 .right-about-content {
-    flex-grow: 1;
-    
-    
     
     justify-content: center;
+}
+.right-about-content img {
+    width:250px;
 }
 
 .skills {
@@ -445,6 +445,7 @@ word-wrap: break-word;
     margin-left: 2rem;
     justify-content: space-around;
     margin-right: 2rem;
+   
    
 }
 
@@ -603,6 +604,12 @@ word-wrap: break-word;
 .experience {
     height: 100vh;
     grid-area: experience;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
 }
 .experience h2 {
     font-size: 80px;
@@ -626,7 +633,6 @@ word-wrap: break-word;
     
     border-radius: 37px;
 background: linear-gradient(145deg, #ffffff30, #dddddd30);
-            
     backdrop-filter: blur(6.3px);
     -webkit-backdrop-filter: blur(6.3px);
     top: -480px;
@@ -667,7 +673,8 @@ background: linear-gradient(145deg, #ffffff30, #dddddd30);
     margin-left: 5rem;
 }
 .rebirth-content img {
-    width: 450px;
+    width:30vw;
+    flex-grow:1;
 }
 .rebirth-right-content {
     display: flex;
@@ -675,6 +682,8 @@ background: linear-gradient(145deg, #ffffff30, #dddddd30);
     justify-content: center;
     align-items: flex-start;
     gap: 4rem;
+    
+    flex-grow:1;
 }
 .rebirth-right-content button {
     height: 70px;
