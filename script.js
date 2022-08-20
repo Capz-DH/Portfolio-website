@@ -7,7 +7,7 @@ function init() {
 
 function aboutMePosition() {
     
-    if (window.scrollY >= 700 && window.scrollY < 1200) {
+    if (window.scrollY >= 600 && window.scrollY < 1300) {
       element.classList.remove('noanim');
       element.classList.add('animme');
     }
@@ -20,24 +20,21 @@ function aboutMePosition() {
         return null;
         
     }
-    if (window.scrollY >= 1200 && element.classList.contains('noanim') === true) {
+    if (window.scrollY >= 1300 && element.classList.contains('noanim') === true) {
         return null
         
     }
-    if (window.scrollY >= 1200 && element.classList.contains('noanim') === false) {
+    if (window.scrollY >= 1300 && element.classList.contains('noanim') === false) {
         element.classList.remove('animme');
         element.classList.add('noanim');
         
     }
   
 }
-
 function socialInit() {
     menu = document.querySelector('.social-menu')
 
 }
-
-
 function socialsMenu() {
     if (window.scrollY > 700 ) {
         menu.classList.remove('socialanimremove')
@@ -55,12 +52,10 @@ function socialsMenu() {
    
 
 }
-
 function skillsInit() {
     skills = document.querySelector('.skills-title');
     
-  }
-  
+}
 function skillsPosition() {
       
       if (window.scrollY >= 700 && window.scrollY < 1500) {
@@ -86,12 +81,11 @@ function skillsPosition() {
           
       }
     
-  }
+}
 function techInit() {
     tech = document.querySelector('.technical');
     
-  }
-  
+}
 function techPosition() {
       
       if (window.scrollY >= 700 && window.scrollY < 1500) {
@@ -117,12 +111,11 @@ function techPosition() {
           
       }
     
-  }
+}
 function nontechInit() {
     nontech = document.querySelector('.non-technical');
     
-  }
-  
+}
 function nonTechPosition() {
       
     if (window.scrollY >= 700 && window.scrollY < 1500) {
@@ -149,20 +142,91 @@ function nonTechPosition() {
     }
   
 }
+function rebirthButtonSelector() {
+    rebirthButton = document.querySelector('.rebirth-right-content-button')
+}
+function isInViewPort() {
+    var buttonBounding = rebirthButton.getBoundingClientRect();
+
+    if (
+        buttonBounding.top >= 0 &&
+        buttonBounding.left >= 0 &&
+        buttonBounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+        buttonBounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    ) {
+        rebirthButton.classList.add('experience-button-anim')
+    } else {
+           
+    }
+}
+function rebirthParaSelector() {
+    rebirthPara = document.querySelector('.rebirth-right-content-para')
+}
+function rebirthParaInIt() {
+    var paraBounding = rebirthPara.getBoundingClientRect();
+
+    if (
+        paraBounding.top >= 0 &&
+        paraBounding.left >= 0 &&
+        paraBounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+        paraBounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    ) {
+        rebirthPara.classList.add('experience-para-anim')
+    } else {
+           
+    }
+}
+function rebirthImgSelector() {
+    rebirthImg = document.querySelector('.rebirth-content-img')
+}
+function rebirthImgInIt() {
+    var imgBounding = rebirthImg.getBoundingClientRect();
+
+    if (
+        imgBounding.top >= 0 &&
+        imgBounding.left >= 0 &&
+        imgBounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+        imgBounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    ) {
+        rebirthImg.classList.add('rebirth-img-anim')
+    } else {
+           
+    }
+}
+function rebirthTitleSelector() {
+    rebirthTitle = document.querySelector('.rebirth-title')
+}
+function rebirthTitleInIt() {
+    var TitleBounding = rebirthTitle.getBoundingClientRect();
+
+    if (
+        TitleBounding.top >= 0 &&
+        TitleBounding.left >= 0 &&
+        TitleBounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+        TitleBounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    ) {
+        rebirthTitle.classList.add('rebirth-title-anim')
+    } else {
+           
+    }
+}
 
 window.addEventListener('scroll', socialsMenu);
-
 window.addEventListener('scroll', aboutMePosition);
-
 window.addEventListener('scroll', skillsPosition);
-
 window.addEventListener('scroll', techPosition);
-
 window.addEventListener('scroll', nonTechPosition);
-
+window.addEventListener('scroll', isInViewPort);
+window.addEventListener('scroll', rebirthParaInIt);
+window.addEventListener('scroll', rebirthImgInIt);
+window.addEventListener('scroll', rebirthTitleInIt);
 
 init();
 socialInit();
 skillsInit();
 techInit();
 nontechInit();
+rebirthButtonSelector();
+rebirthParaSelector();
+rebirthImgSelector();
+rebirthTitleSelector();
