@@ -14,7 +14,7 @@ h2 {
     font-family: 'Poppins';
 font-style: normal;
 font-weight: 600;
-font-size: 110px;
+font-size: 80px;
 color: #454647;
 }
 p {
@@ -27,7 +27,7 @@ h3 {
     font-family: 'Poppins';
 font-style: normal;
 font-weight: 600;
-font-size: 64px;
+font-size: 56px;
 padding-top: 2rem;
 color: #454647;
 
@@ -390,6 +390,7 @@ word-wrap: break-word;
     gap: 3rem;
     justify-content: center;
     align-items: center;
+    opacity: 0;
     
     
     
@@ -448,6 +449,8 @@ word-wrap: break-word;
     margin-left: 2rem;
     justify-content: space-around;
     margin-right: 2rem;
+    align-items: center;
+    
    
    
 }
@@ -625,6 +628,7 @@ word-wrap: break-word;
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    margin-top: 200px;
 
 
 }
@@ -781,4 +785,73 @@ height: 841px;
 left: 0px;
 top: 2857px;
 z-index: -2;
+}
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+.contact-me-wrapper {
+    height: 650px;
+    width: 550px;
+    max-width: 550px;
+    background: linear-gradient(145deg, #ffffff33, #dedede33);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 4rem;
+    margin-bottom: 50px;
+    border-radius: 10px;
+
+}
+.contact-title h3 {
+ padding:0;
+}
+.contact-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.first-name-wrapper, .last-name-wrapper, .email-address-wrapper, .contact-message-wrapper  {
+    display: flex;
+    flex-direction: column;
+
+}
+.contact-name, .email-address-wrapper, .contact-message-wrapper {
+    width: 550px;
+}
+.first-name-wrapper, .last-name-wrapper {
+    width: 250px;
+}
+input {
+    height: 50px;
+}
+.contact-message-wrapper textarea {
+    height: 120px;
+    width:549px;
+    max-width: 549px;
+    min-width:549px;
+    min-height:120px;
+}
+
+.contact-button:active {
+    transform: translateX(-5px) translateY(5px);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: all 0.1s ease-in-out;
+}
+.contact-button {
+    height: 70px;
+    width: 550px;
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--backColour);
+    box-shadow: -5px 5px 0px var(--frontColour);
+    cursor: pointer;
+    font-size: 24px; 
+    
 }
