@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="https://use.typekit.net/yto3quf.css">
 </head>
 <body>
+    <navbar class="header-wrapper">
+        <a id="about-link">About Me</a>
+        <a id="experience-link">Experience</a>
+        <a id="contact-link">Contact Me</a>
+    </navbar>
    
     
     <div class="title">
@@ -46,7 +51,7 @@
         </div>
         </div>
         
-        <div class="about-me-wrapper">
+        <section name="aboutme" class="about-me-wrapper">
             <h2>About Me</h2>
         
         <div class="about-me">
@@ -90,9 +95,9 @@
         </div>
         <img id="left-gradient-circle" src="images/Group 21.svg" alt="gradient circles">
         <img id="right-gradient-circle" src="images/Group 21.svg" alt="gradient circles">
-        </div>
+        </section>
        
-        <div class="experience"> 
+        <div id="experience"> 
             <h2>Experience</h2>
             <div class="experience-content">
                 <div class="rebirth-digital">
@@ -114,8 +119,9 @@
             
            </div>
            <img id="dividing-gradient" src="images/Group 20.svg" alt="dividing gradient">
-           <div class="contact-me">
+           <div id="contact-me">
             <h2>Contact Me</h2>
+            <form action="contactform.php" method="post" >
             <div class="contact-me-wrapper">
                 <div class="contact-title">
                     <h3>Get in Touch</h3>
@@ -124,23 +130,24 @@
                 <div class="contact-name">
                     <div class="first-name-wrapper">
                         <label for="first-name" class="first-name">First Name:</label>
-                        <input placeholder="First Name" id="first-name" type="text">
+                        <input placeholder="First Name" name="firstname" id="first-name" type="text">
                     </div>
                     <div class="last-name-wrapper">
                         <label for="last-name" class="last-name"> Last Name: </label>
-                        <input placeholder="Last Name" id="last-name" type="text">
+                        <input placeholder="Last Name" name="lastname" id="last-name" type="text">
                     </div>
                 </div>
                 <div class="email-address-wrapper">
                     <label for="email-address" class="contact-email"> Email:  </label>
-                    <input placeholder="example@yourdomain.co.uk" id="email-address" type="text">
+                    <input placeholder="example@yourdomain.co.uk" name="mail" id="email-address" type="text">
                 </div>
                 <div class="contact-message-wrapper">
                     <label for="message" class="contact-content"> Message:</label>
-                    <textarea placeholder="Hi...." id="message" type="text"></textarea>
+                    <textarea placeholder="Hi...." id="message" name="message" type="text"></textarea>
                 </div>
-                <button class="contact-button">Send</button>
+                <button type="submit" name="submit" class="contact-button">Send</button>
             </div>
+        </form>
 
            
         </div>

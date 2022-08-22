@@ -198,6 +198,7 @@ function rebirthTitleSelector() {
 }
 function rebirthTitleInIt() {
     var TitleBounding = rebirthTitle.getBoundingClientRect();
+    
 
     if (
         TitleBounding.top >= 0 &&
@@ -211,6 +212,35 @@ function rebirthTitleInIt() {
     }
 }
 
+aboutlink = document.getElementById('about-link');
+aboutme = document.querySelector(".about-me-wrapper");
+
+
+function goTo() {
+    aboutme.scrollIntoView({
+        behavior: "smooth"} )
+
+}
+experiencelink = document.getElementById('experience-link');
+experience = document.getElementById('experience')
+
+
+function goToExperience() {
+    experience.scrollIntoView({
+        behavior: "smooth"} )
+
+}
+contactlink = document.getElementById('contact-link');
+contactMe = document.getElementById('contact-me')
+
+
+function goToContact() {
+    contactMe.scrollIntoView({
+        behavior: "smooth"} )
+
+}
+
+
 window.addEventListener('scroll', socialsMenu);
 window.addEventListener('scroll', aboutMePosition);
 window.addEventListener('scroll', skillsPosition);
@@ -220,7 +250,9 @@ window.addEventListener('scroll', isInViewPort);
 window.addEventListener('scroll', rebirthParaInIt);
 window.addEventListener('scroll', rebirthImgInIt);
 window.addEventListener('scroll', rebirthTitleInIt);
-
+aboutlink.addEventListener('click', goTo);
+experiencelink.addEventListener('click', goToExperience);
+contactlink.addEventListener('click', goToContact);
 init();
 socialInit();
 skillsInit();
@@ -230,3 +262,4 @@ rebirthButtonSelector();
 rebirthParaSelector();
 rebirthImgSelector();
 rebirthTitleSelector();
+
