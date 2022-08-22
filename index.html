@@ -121,13 +121,15 @@
            <img id="dividing-gradient" src="images/Group 20.svg" alt="dividing gradient">
            <div id="contact-me">
             <h2>Contact Me</h2>
-            <form action="contactform.php" method="post" >
+            
             <div class="contact-me-wrapper">
                 <div class="contact-title">
                     <h3>Get in Touch</h3>
                     <p>I would love to hear from you!</p>
                 </div>
+                <form action="/contactform.php" method="post" >
                 <div class="contact-name">
+                   
                     <div class="first-name-wrapper">
                         <label for="first-name" class="first-name">First Name:</label>
                         <input placeholder="First Name" name="firstname" id="first-name" type="text">
@@ -146,8 +148,9 @@
                     <textarea placeholder="Hi...." id="message" name="message" type="text"></textarea>
                 </div>
                 <button type="submit" name="submit" class="contact-button">Send</button>
+            </form>
             </div>
-        </form>
+        
 
            
         </div>
