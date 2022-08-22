@@ -12,7 +12,7 @@ if(isset($_POST['submit'])) {
     
 
     mail($mailTo, $txt, $headers);
-    header("Location: index.html#contact-me");
+    header("Location: https://frabjous-marzipan-490852.netlify.app");
 
 }
 
