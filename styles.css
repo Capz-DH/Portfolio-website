@@ -12,8 +12,9 @@ margin:0;
 }
 .site-wrapper {
     overflow-x: hidden;
-    width: 100vw;
+    position: relative;
 }
+
 
 @media only screen and (min-width: 850px) and (max-width: 2160px) {
     
@@ -83,7 +84,6 @@ body {
     padding: 0;
     background-color: #F6F6F6;
     z-index: -2;
-    overflow-x: hidden;
     
     
 }
