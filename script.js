@@ -142,6 +142,96 @@ function nonTechPosition() {
     }
   
 }
+function mobileSkillsInit() {
+    mobileskills = document.querySelector('.mobile-skills-title');
+    
+}
+function mobileSkillsPosition() {
+      
+      if (window.scrollY >= 700 && window.scrollY < 1500) {
+        mobileskills.classList.remove('unanimate-skills');
+        mobileskills.classList.add('animate-skills');
+      }
+      if (window.scrollY < 400 && mobileskills.classList.contains('animate-skills') === true) {
+        mobileskills.classList.remove('animate-skills');
+        mobileskills.classList.add('unanimate-skills');
+          
+      }
+      if (window.scrollY < 400 && mobileskills.classList.contains('animate-skills') === false) {
+          return null;
+          
+      }
+      if (window.scrollY >= 1500 && mobileskills.classList.contains('unanimate-skills') === true) {
+          return null
+          
+      }
+      if (window.scrollY >= 1500 && mobileskills.classList.contains('unanimate-skills') === false) {
+        mobileskills.classList.remove('animate-skills');
+        mobileskills.classList.add('unanimate-skills');
+          
+      }
+    
+}
+function mobileTechInit() {
+    mobiletech = document.querySelector('.mobile-technical');
+    
+}
+function mobileTechPosition() {
+      
+      if (window.scrollY >= 700 && window.scrollY < 1500) {
+        mobiletech.classList.remove('unanimate-tech');
+        mobiletech.classList.add('animate-tech');
+      }
+      if (window.scrollY < 400 && mobiletech.classList.contains('animate-tech') === true) {
+        mobiletech.classList.remove('animate-tech');
+        mobiletech.classList.add('unanimate-tech');
+          
+      }
+      if (window.scrollY < 400 && mobiletech.classList.contains('animate-tech') === false) {
+          return null;
+          
+      }
+      if (window.scrollY >= 1500 && mobiletech.classList.contains('unanimate-tech') === true) {
+          return null
+          
+      }
+      if (window.scrollY >= 1500 && mobiletech.classList.contains('unanimate-tech') === false) {
+        mobiletech.classList.remove('animate-tech');
+        mobiletech.classList.add('unanimate-tech');
+          
+      }
+    
+}
+function mobileNonTechInit() {
+    mobilenontech = document.querySelector('.mobile-non-technical');
+    
+}
+function mobileNonTechPosition() {
+      
+    if (window.scrollY >= 700 && window.scrollY < 1500) {
+        mobilenontech.classList.remove('unanimate-nontech');
+        mobilenontech.classList.add('animate-nontech');
+    }
+    if (window.scrollY < 400 && mobilenontech.classList.contains('animate-nontech') === true) {
+        mobilenontech.classList.remove('animate-nontech');
+        mobilenontech.classList.add('unanimate-nontech');
+        
+    }
+    if (window.scrollY < 400 && mobilenontech.classList.contains('animate-nontech') === false) {
+        return null;
+        
+    }
+    if (window.scrollY >= 1500 && mobilenontech.classList.contains('unanimate-nontech') === true) {
+        return null
+        
+    }
+    if (window.scrollY >= 1500 && mobilenontech.classList.contains('unanimate-nontech') === false) {
+        mobilenontech.classList.remove('animate-nontech');
+        mobilenontech.classList.add('unanimate-nontech');
+        
+    }
+  
+}
 function rebirthButtonSelector() {
     rebirthButton = document.querySelector('.rebirth-right-content-button')
 }
@@ -246,6 +336,9 @@ window.addEventListener('scroll', aboutMePosition);
 window.addEventListener('scroll', skillsPosition);
 window.addEventListener('scroll', techPosition);
 window.addEventListener('scroll', nonTechPosition);
+window.addEventListener('scroll', mobileSkillsPosition);
+window.addEventListener('scroll', mobileTechPosition);
+window.addEventListener('scroll', mobileNonTechPosition);
 window.addEventListener('scroll', isInViewPort);
 window.addEventListener('scroll', rebirthParaInIt);
 window.addEventListener('scroll', rebirthImgInIt);
@@ -258,6 +351,9 @@ socialInit();
 skillsInit();
 techInit();
 nontechInit();
+mobileSkillsInit();
+mobileTechInit();
+mobileNonTechInit();
 rebirthButtonSelector();
 rebirthParaSelector();
 rebirthImgSelector();
