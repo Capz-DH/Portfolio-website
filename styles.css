@@ -844,11 +844,18 @@ z-index: -2;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 4rem;
     margin-bottom: 25px;
     border-radius: 10px;
 
+}
+.contact-me-wrapper form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
 }
 .contact-title h3 {
  padding:0;
@@ -858,12 +865,12 @@ z-index: -2;
     align-items: center;
     justify-content: space-between;
 }
-.first-name-wrapper, .last-name-wrapper, .email-address-wrapper, .contact-message-wrapper  {
+.first-name-wrapper, .last-name-wrapper, .email-address-wrapper, .contact-message-wrapper, .subject-wrapper  {
     display: flex;
     flex-direction: column;
 
 }
-.contact-name, .email-address-wrapper, .contact-message-wrapper {
+.contact-name, .email-address-wrapper, .contact-message-wrapper, .subject-wrapper {
     width: 550px;
 }
 .first-name-wrapper, .last-name-wrapper {
