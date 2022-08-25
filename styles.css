@@ -1790,6 +1790,7 @@ input {
             padding: 2rem;
             margin-bottom: 25px;
             border-radius: 10px;
+            gap:1rem
         
         }
         .contact-me-wrapper form {
@@ -1802,6 +1803,10 @@ input {
         .contact-title h3 {
          padding:0;
         }
+        .contact-title p {
+            padding:0;
+            font-size: 3vw;
+           }
         .contact-name {
             display: flex;
             align-items: center;
@@ -1819,10 +1824,10 @@ input {
             width: 25vw;
         }
         input {
-            height: 50px;
+            height: 30px;
         }
         .contact-message-wrapper textarea {
-            height: 120px;
+            height: 80px;
             width:59vw;
             max-width: 59vw;
             min-width:59vw;
