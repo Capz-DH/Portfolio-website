@@ -1,5 +1,14 @@
-
-
+ navButton = document.querySelector('.header-button');
+ header = document.querySelector('.header-wrapper')
+function mobileNav(){
+    if (header.classList.contains('header-anim') === false) {
+        header.classList.remove('header-unanim');
+        header.classList.add('header-anim');
+    } else if (header.classList.contains('header-anim')) {
+        header.classList.remove('header-anim');
+        header.classList.add('header-unanim');
+    };
+}
 function init() {
   element = document.querySelector('.about-me');
   
@@ -346,6 +355,7 @@ window.addEventListener('scroll', rebirthTitleInIt);
 aboutlink.addEventListener('click', goTo);
 experiencelink.addEventListener('click', goToExperience);
 contactlink.addEventListener('click', goToContact);
+navButton.addEventListener('click', mobileNav);
 init();
 socialInit();
 skillsInit();
