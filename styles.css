@@ -819,22 +819,22 @@ word-wrap: break-word;
 
 @keyframes unpop {
     0% {
-        transform: translateX(0) ;
+        transform: translateY(0) ;
         opacity: 1;
     }
     100% {
         opacity: 0;
-        transform: translateX(100%);
+        transform: translateY(50%);
 
     }
 }
 @keyframes pop {
-    0%{ transform: translateX(100%);
+    0%{ transform: translateY(50%);
         opacity: 0;
 
     }
     100%{
-        transform: translateX(0);
+        transform: translateY(0);
         opacity: 1;
 
     }
@@ -1135,7 +1135,7 @@ word-wrap: break-word;
 }
 @media only screen and (max-width: 849px) {
     @keyframes skillsanim {
-        0%{ transform: translateX(100%);
+        0%{ transform: translateX(-50%);
             opacity: 0;
     
         }
@@ -1154,14 +1154,14 @@ word-wrap: break-word;
         }
         100% {
             opacity: 0;
-            transform: translateX(100%);
+            transform: translateX(-50%);
     
         }
     }
     
     
     @keyframes techanim {
-        0%{ transform: translateX(100%);
+        0%{ transform: translateX(-50%);
             opacity: 0;
     
         }
@@ -1180,14 +1180,14 @@ word-wrap: break-word;
         }
         100% {
             opacity: 0;
-            transform: translateX(100%);
+            transform: translateX(-50%);
     
         }
     }
     
     
     @keyframes nontechanim {
-        0%{ transform: translateX(100%);
+        0%{ transform: translateX(-50%);
             opacity: 0;
     
         }
@@ -1206,7 +1206,7 @@ word-wrap: break-word;
         }
         100% {
             opacity: 0;
-            transform: translateX(100%);
+            transform: translateX(-50%);
     
         }
     }
@@ -1674,7 +1674,7 @@ word-wrap: break-word;
     @keyframes para-move {
         0%{
             opacity: 0;
-            transform: translateX(100%);
+            transform: translateY(100%);
        
         }
         100%{
