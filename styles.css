@@ -345,9 +345,9 @@ word-wrap: break-word;
 }
 @media only screen and (max-width: 599px){
     .title-wrapper {
-        width: 100vw;
+        width: 90vw;
         height: 100vh;
-        margin-left: 25px;
+        margin-left: 20px;
         padding-top:200px;
     
     }
@@ -438,14 +438,14 @@ word-wrap: break-word;
     z-index:-1;
 }
 .circles div:nth-child(3) {
-    left: 72%;
+    left: 60%;
     background-color: var(--frontColour);
     position: absolute;
-    top:-150px;
+    top:-100px;
     animation: circle-bg 30s infinite;
     animation-delay: 6s;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     z-index:-1;
 }
@@ -476,7 +476,7 @@ word-wrap: break-word;
 .circles div:nth-child(6) {
     position: absolute;
     top:-100px;
-    left: 80%;
+    left: 60%;
     background-color: var(--backColour);
     animation: circle-bg 30s infinite;
     animation-delay: 15s;
@@ -512,12 +512,12 @@ word-wrap: break-word;
 .circles div:nth-child(9) {
     position: absolute;
     top:-120px;
-    left: 88%;
+    left: 60%;
     background-color: var(--frontColour);
     animation: circle-bg 30s infinite;
     animation-delay: 22.5s;
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     z-index:-1;
 }
@@ -548,7 +548,7 @@ word-wrap: break-word;
 .circles div:nth-child(12) {
     position: absolute;
     top:-120px;
-    left: 96%;
+    left: 55%;
     background-color: var(--backColour);
     animation: circle-bg 30s infinite;
     animation-delay: 30s;
