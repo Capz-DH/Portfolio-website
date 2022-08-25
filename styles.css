@@ -11,9 +11,8 @@ font-style: normal;
 margin:0;
 }
 .site-wrapper {
-    overflow-x: hidden;
-    position: relative;
-    width: 102vw;
+    
+    
 }
 
 
@@ -118,6 +117,7 @@ body {
     padding: 0;
     background-color: #F6F6F6;
     z-index: -2;
+   
     
     
 }
@@ -373,7 +373,7 @@ word-wrap: break-word;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-size: 13.5vw;
-    min-width: 900px;
+    ;
     
     animation: side-load 1s;
     
@@ -1213,6 +1213,7 @@ word-wrap: break-word;
 }
 
 #left-gradient-circle {
+    display: none;
     position: absolute;
     z-index:-1;
     width:900px;
@@ -1221,7 +1222,7 @@ word-wrap: break-word;
     
 }
 #right-gradient-circle {
-    position: absolute;
+    display: none;
     z-index:-1;
     width: 900px;
     left: 964px;
