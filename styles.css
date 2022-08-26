@@ -295,8 +295,8 @@ word-wrap: break-word;
 }
 @media only screen and (max-width: 929px) and (min-width: 600px){
     .title-wrapper {
-        width: 100vw;
-        margin-left: 100px;
+        width: 90vw;
+        margin-left: 75px;
         
         
         
@@ -325,7 +325,7 @@ word-wrap: break-word;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-size: 80px;
-    min-width: 900px;
+   
     
     animation: side-load 1s;
     
@@ -341,6 +341,7 @@ word-wrap: break-word;
     animation: side-load 1.5s;
     margin: 0;
     word-wrap: break-word;
+    width: 450px;
 }
 }
 @media only screen and (max-width: 599px){
@@ -697,20 +698,21 @@ word-wrap: break-word;
     }
 }
 
-.about-me-wrapper {
-    grid-area: about;
-    height: 100vh;
-    width:90vw;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
+
 
 
 @media only screen and (min-width:850px) and (max-width:2160px) {
+    .about-me-wrapper {
+        grid-area: about;
+        height: 100vh;
+        width:85vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
     .about-me {
         background: linear-gradient(145deg, #ffffff33, #dedede33);
         backdrop-filter: blur(6.3px);
@@ -738,6 +740,17 @@ word-wrap: break-word;
     }
     }
 @media only screen and (max-width:849px) and (min-width: 502px) {
+    .about-me-wrapper {
+        grid-area: about;
+        height: 100vh;
+        width:79vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
 .about-me {
     background: linear-gradient(145deg, #ffffff33, #dedede33);
     backdrop-filter: blur(6.3px);
@@ -750,7 +763,7 @@ word-wrap: break-word;
     opacity: 0;
     border-bottom-right-radius: 2rem;
     border-top-left-radius: 2rem;
-    margin-right: 10vw;
+
     padding: 0.5rem;
 }
 .left-about-content {
@@ -1211,23 +1224,80 @@ word-wrap: break-word;
         }
     }
 }
-
+@media only screen and (max-width: 500px ) {
 #left-gradient-circle {
-    display: none;
+   
     position: absolute;
     z-index:-1;
-    width:900px;
-    left: -331px;
-    top: 1349px;
+    width: 50vw;
+    left: 0%;
+    top: 1600px;
     
 }
 #right-gradient-circle {
-    display: none;
+    position: absolute;
     z-index:-1;
-    width: 900px;
-    left: 964px;
-    top: 971px;
+    width: 50vw;
+    left: 50%;
+    top: 1200px;
 }
+#dividing-gradient {
+    display: none;
+    position: absolute;
+width: 100vw;
+height: 500px;
+left: 0px;
+top: 2900px;
+z-index: -2;
+}
+#dividing-gradient-mobile {
+    position: absolute;
+width: 100vw;
+height: 500px;
+left: 0px;
+top: 2920px;
+z-index: -2;
+
+}
+}
+@media only screen and (min-width: 501px ) and (max-width: 950px) {
+    #left-gradient-circle {
+       
+        position: absolute;
+        z-index:-1;
+        width: 60vw;
+        left: 0%;
+        top: 1750px;
+        
+    }
+    #right-gradient-circle {
+        position: absolute;
+        z-index:-1;
+        width: 50vw;
+        left: 50%;
+        top: 1200px;
+    }
+    #dividing-gradient {
+        display: none;
+        position: absolute;
+    width: 100vw;
+    height: 500px;
+    left: 0px;
+    top: 2900px;
+    z-index: -2;
+    }
+    #dividing-gradient-mobile {
+        position: absolute;
+    width: 100%;
+    height: 500px;
+    left: 0px;
+    top: 2920px;
+    z-index: -2;
+    
+    }
+    }
+
+
 #experience {
     height: 100vh;
     grid-area: experience;
@@ -1536,7 +1606,7 @@ word-wrap: break-word;
 }
 @media only screen and (max-width: 799px) {
     #experience {
-        width: 85vw;
+        width: 80vw;
         display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1690,14 +1760,7 @@ word-wrap: break-word;
 }
 
 
-#dividing-gradient {
-    position: absolute;
-width: 100vw;
-height: 841px;
-left: 0px;
-top: 2857px;
-z-index: -2;
-}
+
 #contact-me {
     display: flex;
     flex-direction: column;
