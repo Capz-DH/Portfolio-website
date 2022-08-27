@@ -1,6 +1,4 @@
 :root {
-    overflow-x: hidden;
-    -webkit-overflow-x:hidden;
     width:100%;
     --frontColour: #CAD8EC;
     --backColour: #D9E2F0;
@@ -10,10 +8,7 @@
 font-style: normal;
 margin:0;
 }
-.site-wrapper {
-    
-    
-}
+
 
 /* default styling */
 @media only screen and (min-width: 850px) and (max-width: 2160px) {
@@ -259,6 +254,9 @@ font-style: normal;
 font-weight: 400;
 font-size: 32px;
 animation: side-load 0.5s;
+-webkit-animation: side-load 0.5s;
+-o-animation: side-load 0.5s;
+-moz-animation: side-load 0.5s;
 }
 .title-name {
 
@@ -272,9 +270,10 @@ background: linear-gradient(86.7deg, #618FD2 -11.36%, #A6C0F0 40.16%, #C0D3FB 88
 -webkit-text-fill-color: transparent;
 background-clip: text;
 font-size: 128px;
-
-
 animation: side-load 1s;
+-webkit-animation: side-load 1s;
+-o-animation: side-load 1s;
+-moz-animation: side-load 1s;
 
 
 }
@@ -286,6 +285,9 @@ font-style: normal;
 font-weight: 400;
 font-size: 32px;
 animation: side-load 1.5s;
+-webkit-animation: side-load 1.5s;
+-o-animation: side-load 1.5s;
+-moz-animation: side-load 1.5s;
 margin: 0;
 word-wrap: break-word;
 width: 70vw;
@@ -305,6 +307,9 @@ width: 70vw;
     font-weight: 400;
     font-size: 20px;
     animation: side-load 0.5s;
+    -webkit-animation: side-load 0.5s;
+    -o-animation: side-load 0.5s;
+-moz-animation: side-load 0.5s;
     }
     .title-name {
     
@@ -319,6 +324,9 @@ width: 70vw;
     background-clip: text;
     font-size: 80px;
     animation: side-load 1s;
+    -webkit-animation: side-load 1s;
+    -o-animation: side-load 1s;
+    -moz-animation: side-load 1s;
     
     
     }
@@ -330,6 +338,9 @@ width: 70vw;
     font-weight: 400;
     font-size: 20px;
     animation: side-load 1.5s;
+    -webkit-animation: side-load 1.5s;
+    -o-animation: side-load 1.5s;
+    -moz-animation: side-load 1.5s;
     margin: 0;
     word-wrap: break-word;
     width: 410px;
@@ -352,6 +363,9 @@ width: 70vw;
     font-weight: 400;
     font-size: 5vw;
     animation: side-load 0.5s;
+    -webkit-animation: side-load 0.5s;
+    -o-animation: side-load 0.5s;
+    -moz-animation: side-load 0.5s;
     }
     .title-name {
     
@@ -365,9 +379,10 @@ width: 70vw;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-size: 13.5vw;
-    ;
-    
     animation: side-load 1s;
+    -webkit-animation: side-load 1s;
+    -o-animation: side-load 1s;
+    -moz-animation: side-load 1s;
     
     
     }
@@ -379,6 +394,9 @@ width: 70vw;
     font-weight: 400;
     font-size: 5vw;
     animation: side-load 1.5s;
+    -webkit-animation: side-load 1.5s;
+    -o-animation: side-load 1.5s;
+    -moz-animation: side-load 1.5s;
     margin: 0;
     word-wrap: break-word;
     width: 70vw;
