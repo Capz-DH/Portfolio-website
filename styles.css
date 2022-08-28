@@ -19,7 +19,7 @@
     
 }
 /* socials menu */
-@media only screen and (min-width: 500px) and (max-width: 2160px) {
+@media only screen and (min-width: 500px) {
 .positioning-social {
     opacity: 0;
 
@@ -120,7 +120,7 @@
 
 
 /* about me */
-@media only screen and (min-width:850px) and (max-width:2160px) {
+@media only screen and (min-width:850px) {
     .about-me-wrapper {
         grid-area: about;
         height: 100vh;
@@ -276,7 +276,7 @@
     width:20vw;
 }
 /* skills*/
-@media only screen and (min-width:950px) and (max-width:2160px) {
+@media only screen and (min-width:950px)  {
 
 .mobile-skills {
     display: none;
@@ -489,7 +489,7 @@
     animation-delay: 0s;
 }
 /* skills animation */
-@media only screen and (min-width: 850px) and (max-width: 2160px) {
+@media only screen and (min-width: 850px)  {
 @keyframes skillsanim {
     0%{ transform: translateY(100%);
         opacity: 0;
@@ -756,7 +756,7 @@ z-index: -2;
         
         }
 }
-@media only screen and (min-width: 901px ) and (max-width: 2160px) {
+@media only screen and (min-width: 901px ) {
     #left-gradient-circle {
        
         position: absolute;
@@ -806,7 +806,7 @@ z-index: -2;
     height: 650px;
 }
 /* experience */
-@media only screen and (min-width: 950px) and (max-width: 2160px) {
+@media only screen and (min-width: 950px)  {
 .experience h2 {
     font-size: 80px;
     display: flex;
@@ -1270,7 +1270,7 @@ z-index: -2;
     
 }
 
-@media only screen and (min-width: 800px) and (max-width: 2160px) {
+@media only screen and (min-width: 800px) {
 .contact-me-wrapper {
     height: 650px;
     width: 550px;
